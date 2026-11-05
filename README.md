@@ -66,21 +66,6 @@ present the results in an interactive dashboard.
 -   How are orders distributed across shipping modes and priorities?
 -   How do discounts relate to sales and profit?
 
-## Project Files
-
-The repository may contain the following folders:
-
-``` text
-E-Commerce-Sales-Analysis/
-├── README.md
-├── Dataset/
-├── Excel/
-├── SQL/
-├── PowerBI/
-├── Screenshots/
-└── Documentation/
-```
-
 ## How to View the Project
 
 1.  Open the screenshots to see the dashboard pages.
