@@ -1,0 +1,22 @@
+AOV Growth % = 
+VAR Growth = order_items[AOV growth]
+RETURN
+    IF(
+        NOT HASONEVALUE('Date'[Month]),
+        BLANK(),
+        IF(
+            Growth > 0,
+            "▲ " & FORMAT(Growth, "0.0%") 
+             & " vs previous month",
+            IF(
+                Growth < 0,
+                "▼ " & FORMAT(ABS(Growth), "0.0%") 
+                & " vs previous month","-0.0%"
+            )
+        )
+    )
+
+
+
+
+AOV growth = DIVIDE(order_items[AOV]-CALCULATE(order_items[AOV],DATEADD('Date'[Date],-1,MONTH)),CALCULATE(order_items[AOV],DATEADD('Date'[Date],-1,MONTH)))
